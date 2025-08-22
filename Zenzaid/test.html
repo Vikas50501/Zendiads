@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Strategies Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000000;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+      color: #ffffff;
+    }
+  .marketing-strategies {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto auto auto;
+
+  }
+
+    /* Left panel */
+    .left-panel {
+      width: 50%;
+      background: #1f1f1f;
+      padding: 2rem;
+      box-shadow: 2px 0 20px rgba(0, 0, 0, 0.7);
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom-left-radius: 20%;
+      border-bottom-right-radius: 20%;
+      box-shadow: 1px 1px 10px rgba(232, 1, 21, 0.7);
+
+    }
+
+    .left-panel h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .left-panel p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #cccccc;
+    }
+
+    /* Right panel */
+    .right-panel {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000000;
+      margin-top: 5%;
+      margin-left: 5px;
+    }
+
+    /* Circular Menu */
+    .menu-container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Center Circle */
+    .center-circle {
+      width: 220px;
+      height: 220px;
+      background: linear-gradient(145deg, #1f1f1f, #000000);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-weight: bold;
+      text-align: center;
+      border: 3px solid #e80115;
+      box-shadow: 0 0 20px rgba(232, 1, 21, 0.7);
+      position: relative;
+      z-index: 10;
+      animation: pulse 3s infinite;
+    }
+
+    .center-circle h1 {
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+
+    .center-circle h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #cccccc;
+    }
+
+    /* Dotted circle */
+    .center-circle::before {
+      content: '';
+      position: absolute;
+      width: 290px;
+      height: 290px;
+      border: 2px dashed #444;
+      border-radius: 50%;
+      animation: rotateCircle 20s linear infinite;
+    }
+
+    /* Menu Items */
+    .menu-item {
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      cursor: pointer;
+      border: 2px solid #e80115;
+      background: #1f1f1f;
+      transition: background 0.4s ease, color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .menu-item .icon {
+      font-size: 1.8rem;
+      color: #e80115;
+      transition: color 0.4s ease;
+    }
+
+    .menu-item .text {
+      font-size: 0.75rem;
+      margin-top: 5px;
+      font-weight: 600;
+      text-align: center;
+      color: #ffffff;
+      transition: color 0.4s ease;
+    }
+
+    /* Active (Clicked) Item */
+    .menu-item.active {
+      background: #e80115;
+      color: #ffffff;
+      width: 140px;
+      /* bigger size */
+      height: 140px;
+      /* bigger size */
+      box-shadow: 0 0 35px rgb(86 85 85 / 90%);
+      border-color: #ffffff;
+      z-index: 20;
+      transition: all 0.4s ease;
+    }
+
+    .menu-item.active .icon,
+    .menu-item.active .text {
+      color: #ffffff;
+    }
+
+    /* Item positions */
+    .item-1 {
+      transform: translate(0, -210px);
+    }
+
+    .item-2 {
+      transform: rotate(51.4deg) translate(0, -210px) rotate(-51.4deg);
+    }
+
+    .item-3 {
+      transform: rotate(102.8deg) translate(0, -210px) rotate(-102.8deg);
+    }
+
+    .item-4 {
+      transform: rotate(154.2deg) translate(0, -210px) rotate(-154.2deg);
+    }
+
+    .item-5 {
+      transform: rotate(205.6deg) translate(0, -210px) rotate(-205.6deg);
+    }
+
+    .item-6 {
+      transform: rotate(257deg) translate(0, -210px) rotate(-257deg);
+    }
+
+    .item-7 {
+      transform: rotate(308.4deg) translate(0, -210px) rotate(-308.4deg);
+    }
+
+    /* Panel transition */
+    #panel-content {
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .icon-title {
+      display: flex;
+      align-items: baseline;
+
+    }
+
+    .icon-title i {
+      font-size: 2rem;
+      margin-right: 1rem;
+      color: #e80115;
+    }
+
+    /* Animations */
+    @keyframes rotateCircle {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 15px rgba(232, 1, 21, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 35px rgba(232, 1, 21, 1);
+      }
+
+      100% {
+        box-shadow: 0 0 15px rgba(232, 1, 21, 0.4);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .left-panel,
+      .right-panel {
+        width: 100%;
+        height: 50%;
+      }
+
+      .menu-container {
+        transform: scale(0.7);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="marketing-strategies">
+  <!-- Left Panel -->
+  <div class="left-panel">
+    <div id="panel-content">
+      <h2> <span style="color: #e80115; font-size: 2.5rem; font-weight: 900 ;"> 7</span> Marketing Strategies</h2>
+      <p>Click on a strategy circle to the right to learn more about it. Each circle represents a key area in modern
+        digital marketing.</p>
+    </div>
+  </div>
+
+  <!-- Right Panel -->
+  <main class="right-panel">
+    <div class="menu-container">
+      <div class="center-circle">
+        <h1>Marketing Strategies</h1>
+      </div>
+
+      <!-- Menu Items -->
+      <div class="menu-item item-1" data-content="ppc">
+        <div class="icon"><i class="fas fa-bullseye"></i></div>
+        <div class="text">PPC</div>
+      </div>
+      <div class="menu-item item-2" data-content="seo">
+        <div class="icon"><i class="fas fa-search"></i></div>
+        <div class="text">SEO</div>
+      </div>
+      <div class="menu-item item-3" data-content="smm">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <div class="text">SMM</div>
+      </div>
+      <div class="menu-item item-4" data-content="content">
+        <div class="icon"><i class="fas fa-file-alt"></i></div>
+        <div class="text">CONTENT</div>
+      </div>
+      <div class="menu-item item-5" data-content="video">
+        <div class="icon"><i class="fas fa-video"></i></div>
+        <div class="text">VIDEO</div>
+      </div>
+      <div class="menu-item item-6" data-content="voice">
+        <div class="icon"><i class="fas fa-microphone-alt"></i></div>
+        <div class="text">VOICE</div>
+      </div>
+      <div class="menu-item item-7" data-content="email">
+        <div class="icon"><i class="fas fa-envelope"></i></div>
+        <div class="text">EMAIL</div>
+      </div>
+    </div>
+  </main>
+</div>
+  <script>
+    const contentData = {
+      ppc: {
+        title: "Pay-Per-Click (PPC)",
+        description: "PPC is an online advertising model where advertisers pay a fee each time one of their ads is clicked. It's a way of buying visits instead of earning them organically.",
+        icon: "fas fa-bullseye"
+      },
+      seo: {
+        title: "Search Engine Optimization (SEO)",
+        description: "SEO improves website visibility in search engines by optimizing content, structure, and keywords to attract organic traffic.",
+        icon: "fas fa-search"
+      },
+      smm: {
+        title: "Social Media Marketing (SMM)",
+        description: "SMM uses social platforms to engage users, promote services, and strengthen brand visibility.",
+        icon: "fas fa-users"
+      },
+      content: {
+        title: "Content Marketing",
+        description: "Content marketing focuses on valuable, relevant, and consistent content to attract and retain an audience.",
+        icon: "fas fa-file-alt"
+      },
+      video: {
+        title: "Video Marketing",
+        description: "Video marketing uses engaging videos to promote products, educate audiences, and build stronger connections.",
+        icon: "fas fa-video"
+      },
+      voice: {
+        title: "Voice SEO",
+        description: "Voice search optimization targets conversational, long-tail keywords matching how people speak queries.",
+        icon: "fas fa-microphone-alt"
+      },
+      email: {
+        title: "Email Marketing",
+        description: "Email marketing delivers targeted messages to customers, building relationships and driving conversions.",
+        icon: "fas fa-envelope"
+      }
+    };
+
+    const menuItems = document.querySelectorAll('.menu-item');
+    const panelContent = document.getElementById('panel-content');
+
+    function showContent(contentKey, clickedItem) {
+      const data = contentData[contentKey];
+      if (data) {
+        // Remove active from all
+        menuItems.forEach(item => item.classList.remove('active'));
+
+        // Add active to clicked
+        clickedItem.classList.add('active');
+
+        // Update content panel
+        panelContent.style.opacity = 0;
+        setTimeout(() => {
+          panelContent.innerHTML = `
+            <div class="icon-title">
+              <i class="${data.icon}"></i>
+              <h2>${data.title}</h2>
+            </div>
+            <p>${data.description}</p>
+          `;
+          panelContent.style.opacity = 1;
+        }, 200);
+      }
+    }
+
+    menuItems.forEach(item => {
+      const contentKey = item.getAttribute('data-content');
+      item.addEventListener('click', () => showContent(contentKey, item));
+    });
+  </script>
+</body>
+
+</html>
