@@ -13,10 +13,22 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <!-- Z Logo -->
+    <svg class="pre-logo" viewBox="0 0 100 100">
+      <path d="M 20 20 L 80 20 L 20 80 L 80 80" />
+    </svg>
+
+    <!-- Typewriter Quote -->
+    <div id="typewriter" class="typewriter"></div>
+  </div>
+
+  <!-- Navigation Bar -->
   <nav class="nav-bar">
     <div class="nav-container">
       <div class="logo"><a href="#"><img src="img/logo-2.png" alt="Logo"></a></div>
@@ -24,8 +36,8 @@
         <li><a href="#section-1">Home</a></li>
         <li><a href="About.html">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="#section-5">Blog</a></li>
-        <li><a href="#section-10-main">Contact Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
       </ul>
       <button class="get-in-touch"><a href="https://api.whatsapp.com/send?phone=+91 8689852458&text=Hii">GET IN TOUCH
         </a></button>
@@ -36,6 +48,9 @@
       </div>
     </div>
   </nav>
+
+
+  <!-- section-1 -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="img/slider-1.webp" alt="">
@@ -45,6 +60,10 @@
           </div>
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="button-container">
+            <button class="slider-btn"><a href="https://api.whatsapp.com/send?phone=+91 8689852458&text=Hii">GET IN
+                TOUCH</a></button>
           </div>
         </div>
       </div>
@@ -177,7 +196,7 @@
   <section class="types-of-dm">
     <div class="dm-main-container">
       <div class="dm-heading">
-        <h1><span style="color:#fff;">Main Types Of </span><br>Digital Marketing</h1>
+        <h1><span style="color: black;">Main Types Of </span><br>Digital Marketing</h1>
       </div>
 
       <div class="dm-content-layout">
@@ -212,14 +231,58 @@
       </div>
     </div>
   </section>
-  <!-- marketing strategies -->
-  <section class="section-4">
+  <!-- marquee-section-->
+  <div class="marquee-section">
+    <marquee scrollamount="15" loop="10">CONTENT MARKETING<span> * </span> SOCIAL MEDIA MARKETING<span> * </span> SEARCH
+      ENGINE OPTIMIZATION<span> * </span> EMAIL MARKETING<span> * </span> PPC<span> * </span> AFFILIATE MARKETING<span>
+        * </span> INFLUENCER MARKETING<span> * </span> VIDEO MARKETING<span> * </span> SMS MARKETING<span> * </span> WEB
+      ANALYTICS<span> * </span> MOBILE MARKETING<span> * </span> ONLINE PR<span> * </span> CONVERSION RATE OPTIMIZATION
+      (CRO)<span> * </span> MARKETING AUTOMATION<span> * </span> ECOMMERCE MARKETING<span> * </span> DISPLAY
+      ADVERTISING<span> * </span> NATIVE ADVERTISING<span> * </span> PROGRAMMATIC ADVERTISING<span> * </span> VOICE
+      SEARCH OPTIMIZATION<span> * </span> LOCAL SEO<span> * </span></marquee>
+    </marquee>
+  </div>
+  <!-- section-4 -->
+  <div class="section-4" id="section-4">
+    <div class="title-1">
+      <p>------ Technology What We Use ------</p>
+    </div>
+    <div class="title-2">
+      <h1 class="typewriter-text" style="white-space: pre-line;"></h1>
+    </div>
+    <div class="cards">
+      <div>
+        <img src="img/service-card-1.png" alt="">
+        <h1>Whatsapp Marketing</h1>
+        <p>Whatsapp marketing is a powerful tool for reaching customers directly through their mobile devices, enabling
+          personalized communication and engagement.</p>
+      </div>
+      <div>
+        <img src="img/service-card-2.png" alt="">
+        <h1>SEO</h1>
+        <p>SEO is the process of optimizing your website to rank higher in search engine results pages, driving organic
+          traffic and improving visibility.</p>
+      </div>
+      <div>
+        <img src="img/service-card-3.png" alt="">
+        <h1>Web & Mobile App<span class="Success"> Development</span></h1>
+        <p>We integrate Artificial Intelligence across every stage — from design to development
+          — to optimize processes, accelerate delivery, and build intelligent digital experiences. </p>
+      </div>
+    </div>
+    <div class="view-all-services-btn">
+      <button class="service-section-btn"><a href="services.html">View All Services</a></button>
+    </div>
+  </div>
+  <!-- Section-5 marketing strategies -->
+  <section class="section-5">
     <div class="marketing-strategies">
       <!-- Left Panel -->
       <div class="left-panel">
         <div id="panel-content">
           <h2> <span style="color: #e80115; font-size: 2.5rem; font-weight: 900 ;"> 7</span> Marketing Strategies</h2>
-          <p>Click on a strategy circle to the right to learn more about it. Each circle represents a key area in modern
+          <p>Click on a strategy circle to the right to learn more about it. Each circle represents a key area in
+            modern
             digital marketing.</p>
         </div>
       </div>
@@ -264,6 +327,61 @@
       </main>
     </div>
   </section>
+<!-- blog section -->
+  <section class="blog-section">
+    <div class="section-header">
+      <h1>Our Latest Blogs</h1>
+      <p>Discover new ideas and insights from our team.</p>
+    </div>
+
+    <div class="blog-grid">
+      <div class="blog-post">
+        <img class="blog-image" src="https://placehold.co/600x400/1e40af/ffffff?text=Image+1" alt="Blog Post Image 1">
+        <div class="blog-content">
+          <h2>The Power of Mindful Coding</h2>
+          <p>
+            Discover how practicing mindfulness can lead to better code quality and a more fulfilling development career. 
+            Learn simple techniques to stay focused and beat burnout. Mindful coding not only reduces stress but also 
+            improves problem-solving, creativity, and collaboration among teams. Start your mindful journey today.
+          </p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img class="blog-image" src="https://placehold.co/600x400/047857/ffffff?text=Image+2" alt="Blog Post Image 2">
+        <div class="blog-content">
+          <h2>Designing for Accessibility</h2>
+          <p>
+            Making the web accessible is not just a trend, it's a necessity. Dive into the core principles of accessible 
+            design and how to implement them in your projects. From color contrast to keyboard navigation and ARIA 
+            labels, accessibility ensures inclusivity for all. Great design is accessible design.
+          </p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img class="blog-image" src="https://placehold.co/600x400/991b1f/ffffff?text=Image+3" alt="Blog Post Image 3">
+        <div class="blog-content">
+          <h2>The Future of AI in Web Development</h2>
+          <p>
+            Explore the exciting new tools and frameworks that are leveraging AI to revolutionize the way we build 
+            websites and applications. AI is enabling automated testing, personalized user experiences, and faster 
+            development cycles. The future of AI in web development is only just beginning, and developers who 
+            embrace it will stay ahead.
+          </p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <a href="blog.html" class="view-all-button">
+        View All Blogs
+      </a>
+    </div>
+  </section>
   <!-- footer -->
   <footer class="site-footer">
     <div class="footer-main-row">
@@ -279,9 +397,11 @@
       <div class="footer-section footer-links">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#" style="color: #e80115;">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
 

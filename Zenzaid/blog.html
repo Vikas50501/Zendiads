@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="section-1">
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <div class="logo"><a href="#"><img src="img/logo-2.png" alt="Aspirant Logo"></a></div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html" style="color: #e80115;">Blog</a></li>
+                    <li><a href="contactus.html ">Contact Us</a></li>
+                </ul>
+                <a href="#" class="get-in-touch-btn">GET IN TOUCH</a>
+                <div class="burger-menu" onclick="toggleMenu(this)">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+        <div class="section-1-header">
+            <h1 class="page-title">Blog</h1>
+            <h2 class="breadcrumb"><a href="index.html">Home</a><span class="Success"> /</span> <a href="services.html"
+                    style="color: #e80115;">Blog</a></h2>
+            <img src="img/Services.png" alt="Blog Hero Image">
+        </div>
+    </section>
+    <!-- section-2 blog -->
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest Digital Marketing Insights</h2>
+
+            <!-- Blog Post 1 -->
+            <article class="blog-post">
+                <div class="blog-post-image-container">
+                    <!-- Aspect ratio wrapper for gap-less images -->
+                    <div class="aspect-ratio-wrapper">
+                        <img src="img/main-img.png" alt="A person working on SEO" class="blog-post-image">
+                    </div>
+                </div>
+                <div class="post-content">
+                    <span class="category-tag">Content Marketing</span>
+                    <h3>The Ultimate Guide to Creating</h3>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar-alt"></i> August 25, 2025</span>
+                        <span><i class="fas fa-clock"></i> 7 min read</span>
+                    </div>
+                    <p>Learn how to plan, create, and distribute content that resonates with your audience and drives conversions. We break down the step-by-step process of building an effective content calendar to boost your brand.</p>
+                    <a href="#" class="read-more">Read More <span class="read-more-arrow">&rarr;</span></a>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post">
+                <div class="blog-post-image-container">
+                    <div class="aspect-ratio-wrapper">
+                        <img src="img/main-img.png" alt="A person working on SEO" class="blog-post-image">
+                    </div>
+                </div>
+                <div class="post-content">
+                    <span class="category-tag">PPC</span>
+                    <h3>Next-Gen PPC: How to Leverage AI for Your Ad Campaigns</h3>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar-alt"></i> August 20, 2025</span>
+                        <span><i class="fas fa-clock"></i> 6 min read</span>
+                    </div>
+                    <p>Artificial intelligence is revolutionizing paid advertising. Discover how to use AI tools to automate bidding, personalize ad copy, and find new target audiences for better ROI and reduced ad spend.</p>
+                    <a href="#" class="read-more">Read More <span class="read-more-arrow">&rarr;</span></a>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-post">
+                <div class="blog-post-image-container">
+                    <div class="aspect-ratio-wrapper">
+                        <img src="img/main-img.png" alt="A person working on SEO" class="blog-post-image">
+                    </div>
+                </div>
+                <div class="post-content">
+                    <span class="category-tag">Social Media</span>
+                    <h3>Unlock Your Brand's Potential with LinkedIn Marketing</h3>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar-alt"></i> August 18, 2025</span>
+                        <span><i class="fas fa-clock"></i> 5 min read</span>
+                    </div>
+                    <p>LinkedIn is more than just a networking site. We explore advanced strategies for building thought leadership, generating B2B leads, and creating a powerful company presence on the platform.</p>
+                    <a href="#" class="read-more">Read More <span class="read-more-arrow">&rarr;</span></a>
+                </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-post">
+                <div class="blog-post-image-container">
+                    <div class="aspect-ratio-wrapper">
+                        <img src="img/main-img.png" alt="A person working on SEO" class="blog-post-image">
+                    </div>
+                </div>
+                <div class="post-content">
+                    <span class="category-tag">SEO</span>
+                    <h3>Advanced SEO: Core Web Vitals and E-E-A-T Explained</h3>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar-alt"></i> August 15, 2025</span>
+                        <span><i class="fas fa-clock"></i> 9 min read</span>
+                    </div>
+                    <p>Dive deep into the technical side of SEO. This post demystifies Google's most important ranking factors, including Core Web Vitals and the updated E-E-A-T framework, to help you dominate search rankings.</p>
+                    <a href="#" class="read-more">Read More <span class="read-more-arrow">&rarr;</span></a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- footer -->
+  <footer class="site-footer">
+    <div class="footer-main-row">
+      <!-- Logo and description column -->
+      <div class="footer-section footer-logo-column">
+        <img src="img/logo-2.png" alt="SigMac Enterprises Logo" class="footer-logo">
+        <p>At Zendiads , we are driven by customer satisfaction. One way we deliver that is through our experts. We
+          service all types of Laptop & Desktop, including Annual Maintenance Contract, Facility Management Services,
+          Virtual.</p>
+      </div>
+          <!-- Quick Links -->
+      <div class="footer-section footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#" style="color: #e80115;">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="footer-section footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: contact@sigmac.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: 123 Tech Street, Silicon Valley, CA</p>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="footer-section footer-social">
+        <h3>Social Media</h3>
+        <ul>
+          <li>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24">
+                <path d="M14 13.5h2v2h-2v4h-3v-4h-2v-2h2v-2a3 3 0 013-3h3v3z"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22.46 6c-.84.37-1.74.62-2.67.73.96-.58 1.7-1.5 2.04-2.58-.9.55-1.9.96-2.95 1.17-.85-.9-2.06-1.46-3.41-1.46-2.57 0-4.65 2.08-4.65 4.65 0 .36.04.7.13 1.03-3.87-.2-7.3-2.05-9.6-4.88-.4.7-.63 1.54-.63 2.41 0 1.6.82 3.01 2.06 3.84-.76-.02-1.48-.23-2.11-.58v.06c0 2.25 1.6 4.13 3.73 4.56-.39.1-.8.15-1.22.15-.3 0-.58-.03-.86-.08.59 1.85 2.3 3.19 4.3 3.23-1.59 1.25-3.6 2-5.78 2-.37 0-.74-.02-1.1-.06 2.05 1.32 4.49 2.1 7.12 2.1 8.54 0 13.2-7.07 13.2-13.2 0-.2-.01-.4-.01-.6.91-.65 1.7-1.47 2.32-2.42z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.772 1.65 4.904 4.904.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.132 3.252-1.65 4.772-4.904 4.904-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.132-4.772-1.65-4.904-4.904-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.132-3.252 1.65-4.772 4.904-4.904 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.668.014-4.942.074-4.243.204-6.426 2.387-6.621 6.621-.06 1.274-.075 1.683-.075 4.942 0 3.259.014 3.668.074 4.942.204 4.243 2.387 6.426 6.621 6.621 1.274.06 1.683.075 4.942.075s3.668-.014 4.942-.074c4.243-.204 6.426-2.387 6.621-6.621.06-1.274.075-1.683.075-4.942s-.014-3.668-.074-4.942c-.204-4.243-2.387-6.426-6.621-6.621-1.274-.06-1.683-.075-4.942-.075zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 2.163a4 4 0 110 8 4 4 0 010-8zm6.545-2.222a1.536 1.536 0 100 3.072 1.536 1.536 0 000-3.072z">
+                </path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright section -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 Zendiads All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

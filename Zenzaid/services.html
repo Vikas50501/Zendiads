@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
       <link rel="icon" type="image/x-icon" href="img/Fav-icon.png">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="css/services.css">
 </head>
 
 <body>
@@ -21,8 +22,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="#services" style="color: #e80115;">Services</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
                 <a href="#" class="get-in-touch-btn">GET IN TOUCH</a>
                 <div class="burger-menu" onclick="toggleMenu(this)">
@@ -40,89 +41,19 @@
         </div>
     </section>
 
-    <div class="section-2">
-        <div class="service-box">
-            <div class="box-content">
-                <h1 class="box-title"><span class="Success">____ </span>Brand Craft <br>Solutions</h1>
-                <p class="service-description">A creative agency specializing in providing innovative and unique
-                    solutions to businesses to build their brand.</p>
-                <p class="service-plus-text"><span class="Success">+</span> Strategy Spark</p>
-                <p class="service-plus-text"><span class="Success">+</span> Brand Blaze</p>
-            </div>
+ <div class="section-2">
+        <!-- <h2>Our Services</h2> -->
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="tab-button active" onclick="showServices('digital')">Digital Growth Hub</button>
+            <button class="tab-button" onclick="showServices('tech')">Tech Innovation Hub</button>
         </div>
-        <div class="service-box">
-            <div class="box-content">
-                <h1 class="box-title"><span class="Success">____ </span>Creati Merge <br>Artistry</h1>
-                <p class="service-description">A creative agency specializing in providing innovative and unique
-                    solutions to businesses to build their brand.</p>
-                <p class="service-plus-text"><span class="Success">+</span> Strategy Spark</p>
-                <p class="service-plus-text"><span class="Success">+</span> Brand Blaze</p>
-            </div>
-        </div>
-        <div class="service-box">
-            <div class="box-content">
-                <h1 class="box-title"><span class="Success">____ </span>Logo Launch<br>Solutions</h1>
-                <p class="service-description">A creative agency specializing in providing innovative and unique
-                    solutions to businesses to build their brand.</p>
-                <p class="service-plus-text"><span class="Success">+</span> Strategy Spark</p>
-                <p class="service-plus-text"><span class="Success">+</span> Brand Blaze</p>
-            </div>
-        </div>
-        <div class="service-box">
-            <div class="box-content">
-                <h1 class="box-title"><span class="Success">____ </span>Creative Canvas <br>Co</h1>
-                <p class="service-description">A creative agency specializing in providing innovative and unique
-                    solutions to businesses to build their brand.</p>
-                <p class="service-plus-text"><span class="Success">+</span> Strategy Spark</p>
-                <p class="service-plus-text"><span class="Success">+</span> Brand Blaze</p>
-            </div>
-        </div>
-        <div class="service-box">
-            <div class="box-content">
-                <h1 class="box-title"><span class="Success">____ </span>Design <br>Dynamo</h1>
-                <p class="service-description">A creative agency specializing in providing innovative and unique
-                    solutions to businesses to build their brand.</p>
-                <p class="service-plus-text"><span class="Success">+</span> Strategy Spark</p>
-                <p class="service-plus-text"><span class="Success">+</span> Brand Blaze</p>
-            </div>
-        </div>
-        <div class="service-box">
-            <div class="box-content">
-                <h1 class="box-title"><span class="Success">____ </span>Artistry <br>Avenue</h1>
-                <p class="service-description">A creative agency specializing in providing innovative and unique
-                    solutions to businesses to build their brand.</p>
-                <p class="service-plus-text"><span class="Success">+</span> Strategy Spark</p>
-                <p class="service-plus-text"><span class="Success">+</span> Brand Blaze</p>
-            </div>
-        </div>
-        <div class="service-box">
-            <div class="box-content">
-                <h1 class="box-title"><span class="Success">____ </span>Spark&Style <br>Agency</h1>
-                <p class="service-description">A creative agency specializing in providing innovative and unique
-                    solutions to businesses to build their brand.</p>
-                <p class="service-plus-text"><span class="Success">+</span> Strategy Spark</p>
-                <p class="service-plus-text"><span class="Success">+</span> Brand Blaze</p>
-            </div>
-        </div>
-        <div class="service-box">
-            <div class="box-content">
-                <h1 class="box-title"><span class="Success">____ </span>Imagination Forge <br>Forge</h1>
-                <p class="service-description">A creative agency specializing in providing innovative and unique
-                    solutions to businesses to build their brand.</p>
-                <p class="service-plus-text"><span class="Success">+</span> Strategy Spark</p>
-                <p class="service-plus-text"><span class="Success">+</span> Brand Blaze</p>
-            </div>
-        </div>
-        <div class="service-box">
-            <div class="box-content">
-                <h1 class="box-title"><span class="Success">____ </span>Story Sculpt <br>Studio</h1>
-                <p class="service-description">A creative agency specializing in providing innovative and unique
-                    solutions to businesses to build their brand.</p>
-                <p class="service-plus-text"><span class="Success">+</span> Strategy Spark</p>
-                <p class="service-plus-text"><span class="Success">+</span> Brand Blaze</p>
-            </div>
-        </div>
+
+        <!-- Services Grid -->
+        <div id="services" class="services-grid"></div>
     </div>
+
     <!-- foter -->
 <footer class="site-footer">
         <div class="footer-main-row">
@@ -139,6 +70,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#services" style="color: #e80115;">Services</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
             </div>
 

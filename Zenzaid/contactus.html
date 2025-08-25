@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contactus.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Oxygen:wght@300;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+        <section class="section-1">
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <div class="logo"><a href="#"><img src="img/logo-2.png" alt="Aspirant Logo"></a></div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#contact" style="color: #e80115;">Contact Us</a></li>
+                </ul>
+                <a href="#" class="get-in-touch-btn">GET IN TOUCH</a>
+                <div class="burger-menu" onclick="toggleMenu(this)">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+        <div class="section-1-header">
+            <h1 class="page-title">Contact Us</h1>
+            <h2 class="breadcrumb"><a href="index.html">Home</a><span class="Success"> /</span> <a href="services.html"
+                    style="color: #e80115;">Contact Us</a></h2>
+            <img src="img/Services.png" alt="Blog Hero Image">
+        </div>
+    </section>
+    <!-- map and contact us -->
+     <div class="contact-container">
+        <!-- New Map Section at the top -->
+        <div class="map-section">
+            <div class="map-embed-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991624647313!2d2.2922926156747514!3d48.85837007928741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9af991448de!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1628109315357!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- This new container holds the left and right columns together -->
+        <div class="contact-form-row">
+            <!-- Left Column: Contact Information -->
+            <div class="contact-info-section">
+                <div class="info-content">
+                    <h2>Contact Information</h2>
+                    <p>Say something to retain a human soulmate</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="icon"><i class="fas fa-phone"></i></span>
+                            <span>+00 900 800 800</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span>cjm@digital.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span>132, MyStreet, MyCity, P.O. BOX 00000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="contact-form-section">
+                <!-- Gear icon for a little flair -->
+                <div class="settings-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+            
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact">Email / Phone Number</label>
+                        <input type="text" id="contact" name="contact" placeholder="Email or Phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your message here"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <!-- The paper airplane icon at the bottom of the form -->
+                <div class="paper-airplane">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- footer -->
+  <footer class="site-footer">
+    <div class="footer-main-row">
+      <!-- Logo and description column -->
+      <div class="footer-section footer-logo-column">
+        <img src="img/logo-2.png" alt="SigMac Enterprises Logo" class="footer-logo">
+        <p>At Zendiads , we are driven by customer satisfaction. One way we deliver that is through our experts. We
+          service all types of Laptop & Desktop, including Annual Maintenance Contract, Facility Management Services,
+          Virtual.</p>
+      </div>
+          <!-- Quick Links -->
+      <div class="footer-section footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#" style="color: #e80115;">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="footer-section footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: contact@sigmac.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: 123 Tech Street, Silicon Valley, CA</p>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="footer-section footer-social">
+        <h3>Social Media</h3>
+        <ul>
+          <li>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24">
+                <path d="M14 13.5h2v2h-2v4h-3v-4h-2v-2h2v-2a3 3 0 013-3h3v3z"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22.46 6c-.84.37-1.74.62-2.67.73.96-.58 1.7-1.5 2.04-2.58-.9.55-1.9.96-2.95 1.17-.85-.9-2.06-1.46-3.41-1.46-2.57 0-4.65 2.08-4.65 4.65 0 .36.04.7.13 1.03-3.87-.2-7.3-2.05-9.6-4.88-.4.7-.63 1.54-.63 2.41 0 1.6.82 3.01 2.06 3.84-.76-.02-1.48-.23-2.11-.58v.06c0 2.25 1.6 4.13 3.73 4.56-.39.1-.8.15-1.22.15-.3 0-.58-.03-.86-.08.59 1.85 2.3 3.19 4.3 3.23-1.59 1.25-3.6 2-5.78 2-.37 0-.74-.02-1.1-.06 2.05 1.32 4.49 2.1 7.12 2.1 8.54 0 13.2-7.07 13.2-13.2 0-.2-.01-.4-.01-.6.91-.65 1.7-1.47 2.32-2.42z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.772 1.65 4.904 4.904.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.132 3.252-1.65 4.772-4.904 4.904-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.132-4.772-1.65-4.904-4.904-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.132-3.252 1.65-4.772 4.904-4.904 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.668.014-4.942.074-4.243.204-6.426 2.387-6.621 6.621-.06 1.274-.075 1.683-.075 4.942 0 3.259.014 3.668.074 4.942.204 4.243 2.387 6.426 6.621 6.621 1.274.06 1.683.075 4.942.075s3.668-.014 4.942-.074c4.243-.204 6.426-2.387 6.621-6.621.06-1.274.075-1.683.075-4.942s-.014-3.668-.074-4.942c-.204-4.243-2.387-6.426-6.621-6.621-1.274-.06-1.683-.075-4.942-.075zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 2.163a4 4 0 110 8 4 4 0 010-8zm6.545-2.222a1.536 1.536 0 100 3.072 1.536 1.536 0 000-3.072z">
+                </path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright section -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 Zendiads All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
