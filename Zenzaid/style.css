@@ -251,8 +251,13 @@ button img {
 }
 
 .slide-content {
-  position: absolute;
-  z-index: 2;
+   position: absolute;
+      z-index: 10;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+      text-align: center;
+      background: #ffffff5e;
 }
 
 .slide-content h1 {
@@ -1301,4 +1306,5 @@ hr {
   .footer-contact h3:after {
     margin: 5px auto 0;
   }
+
 }
