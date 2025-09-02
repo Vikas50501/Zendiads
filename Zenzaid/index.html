@@ -28,69 +28,75 @@
     <div id="typewriter" class="typewriter"></div>
   </div>
 
-  <!-- Navigation Bar -->
-  <nav class="nav-bar">
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <div class="logo"><a href="#"><img src="img/logo-2.png" alt="Logo"></a></div>
-      <ul id="nav-links">
-        <li><a href="#section-1">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-      </ul>
-      <button class="get-in-touch"><a href="https://api.whatsapp.com/send?phone=+91 8689852458&text=Hii">GET IN TOUCH
-        </a></button>
-      <div class="burger" onclick="toggleMenu(this)">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <div class="nav-left">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+    </div>
+
+    <div class="logo">
+      <a href="#"><img src="img/logo-black.png" alt="Logo"></a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#" class="nav-link">Portfolio</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contactus.html" class="nav-link">Contact</a>
+    </div>
+
+    <div class="burger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     </div>
   </nav>
 
-
-  <!-- section-1 -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/slider-1.webp" alt="">
-        <div class="slide-content">
-          <div>
-            <h1>DIGITAL MARKETING</h1>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div class="button-container">
-            <button class="slider-btn"><a href="https://api.whatsapp.com/send?phone=+91 8689852458&text=Hii">GET IN
-                TOUCH</a></button>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide"><img src="img/slider-2.webp" alt="">
-        <div class="slide-content">
-          <div>
-            <h1>IT STRATEGY & ROADMAP <br>PLANNING</h1>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div class="button-container">
-            <button class="slider-btn"><a href="https://api.whatsapp.com/send?phone=+91 8689852458&text=Hii">GET IN
-                TOUCH</a></button>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div> -->
-    </div>
-    <div class="swiper-scrollbar"></div>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="#">Portfolio</a>
+    <a href="blog.html">Blog</a>
+    <a href="contactus.html">Contact</a>
   </div>
+
+
+
+   <!-- Hero -->
+  <main class="main-hero">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/slider-1.webp" alt="Slide 1" class="slide-image">
+          <!-- <div class="slide-content">
+            <h1>TO GET STARTED <span style="color:#e80115;">WITH CONFIDENCE</span></h1>
+            <p>Phamiliy helps you find the right pharmacy and get started independently with advice, training, digital tools, and monitoring.</p>
+          </div> -->
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-3.jpg" class="slide-image" alt="Slide 2">
+          <!-- <div class="slide-content">
+            <h1>Slide Two Title</h1>
+            <p>This is the second slide’s content appearing above the image.</p>
+          </div> -->
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slider-2.webp" class="slide-image" alt="Slide 3">
+          <!-- <div class="slide-content">
+            <h1>Slide Three Title</h1>
+            <p>This is the third slide’s text displayed above its background image.</p>
+          </div> -->
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+
   <!-- section-2 -->
   <div class="za-container">
     <div class="za-box">
@@ -233,7 +239,7 @@
   </section>
   <!-- marquee-section-->
   <div class="marquee-section">
-    <marquee scrollamount="15" loop="10">CONTENT MARKETING<span> * </span> SOCIAL MEDIA MARKETING<span> * </span> SEARCH
+    <marquee scrollamount="20" loop="100">CONTENT MARKETING<span> * </span> SOCIAL MEDIA MARKETING<span> * </span> SEARCH
       ENGINE OPTIMIZATION<span> * </span> EMAIL MARKETING<span> * </span> PPC<span> * </span> AFFILIATE MARKETING<span>
         * </span> INFLUENCER MARKETING<span> * </span> VIDEO MARKETING<span> * </span> SMS MARKETING<span> * </span> WEB
       ANALYTICS<span> * </span> MOBILE MARKETING<span> * </span> ONLINE PR<span> * </span> CONVERSION RATE OPTIMIZATION

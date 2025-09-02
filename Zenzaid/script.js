@@ -1,18 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ==================================================
-  // Navbar Burger Menu
-  // ==================================================
-  function toggleMenu(burger) {
-    const navLinks = document.getElementById("nav-links");
-    if (navLinks) {
-      navLinks.classList.toggle("active");
-      burger.classList.toggle("active");
+  
+    // Toggle mobile menu
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('active');
     }
-  }
-  window.toggleMenu = toggleMenu;
-
-
   // ==================================================
   // Preloader with Typewriter Words
   // ==================================================
@@ -58,6 +50,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 5000);
   });
 
+    // Blur navbar on scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 80) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
 
   // ==================================================
   // Services Tabs
@@ -105,18 +106,11 @@ document.addEventListener("DOMContentLoaded", () => {
   showServices("digital"); // default tab
 
 
-  // ==================================================
-  // Swiper Slider
-  // ==================================================
-  if (typeof Swiper !== "undefined") {
-    new Swiper(".mySwiper", {
+  // Swiper init
+    new Swiper('.swiper', {
       loop: true,
-      effect: "fade",
-      fadeEffect: { crossFade: true },
-      pagination: { el: ".swiper-pagination", clickable: true },
-      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
+      pagination: { el: '.swiper-pagination', clickable: true }
     });
-  }
 
 
   // ==================================================
